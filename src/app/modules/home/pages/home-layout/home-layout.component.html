@@ -1,8 +1,8 @@
 <!-- Imagen principal -->
 <div class="d-flex flex-column align-items-center w-100">
 
-    <section class="row g-0 justify-content-center align-items-center w-100 h-100 mx-auto">
-        <img class="w-100" [src]="images.home_bg">
+    <section class="row g-0 justify-content-center align-items-center mx-auto"
+        [ngStyle]="{'background-image': 'url('+ images.home_bg + ')'}">
     </section>
 
 </div>

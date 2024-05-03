@@ -33,3 +33,12 @@ a:hover {
 .dropdown:hover .dropdown_menu {
     display: block;
 }
+
+//? grid de navbar
+
+.navbar_grid {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}

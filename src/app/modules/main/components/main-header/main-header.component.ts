@@ -2,7 +2,7 @@ import { Component, EventEmitter, HostListener, Input, Output } from '@angular/c
 import { MatDialog } from '@angular/material/dialog';
 import { CmmSearchDialogComponent } from 'src/app/common/components/ecommerce/cmm-search-dialog/cmm-search-dialog.component';
 import { CmmDialogService } from 'src/app/common/services/dialogs.service';
-import { icons, logos } from 'src/assets/images/image-routes';
+import { icons, images, logos } from 'src/assets/images/image-routes';
 
 @Component({
   selector: 'cmp-main-header',
@@ -14,6 +14,24 @@ export class MainHeaderComponent {
   icons = icons
 
   logos = logos
+
+  navbarItems: any[] = [
+    {
+      text: 'Best sellers',
+    },
+    {
+      text: 'Recetas',
+    },
+    {
+      text: 'Educativos',
+    },
+    {
+      text: 'Infantiles',
+    },
+    {
+      text: 'papelería',
+    },
+  ]
 
   /**
    * Emite evento de abrir sidenav

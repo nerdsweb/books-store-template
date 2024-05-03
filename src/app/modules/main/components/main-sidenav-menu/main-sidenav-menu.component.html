@@ -1,0 +1,25 @@
+<div class="row mx-auto w-100">
+
+    <div class="col-12 d-flex justify-content-end pt-3 pe-3">
+
+        <mat-icon class="cursor-pointer" (click)="closeSidenav.emit()">close</mat-icon>
+
+    </div>
+
+    <mat-expansion-panel *ngFor="let expansionPanel of expansionPanelData; index as i" class="col-12 p-0"
+        (opened)="panelExpanded = i" [expanded]="panelExpanded == i">
+
+        <mat-expansion-panel-header
+            style="background: transparent;height: 64px;">{{expansionPanel.header}}</mat-expansion-panel-header>
+
+        <mat-divider></mat-divider>
+
+        <div *ngFor="let item of expansionPanel.items; index as i" class="cursor-pointer"
+            [ngClass]="i == 0?'my-3':'mb-3'">
+            <span routerLink="/products" (click)="closeSidenav.emit()">{{item}}</span>
+            <mat-divider></mat-divider>
+        </div>
+
+    </mat-expansion-panel>
+
+</div>

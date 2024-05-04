@@ -1,8 +1,29 @@
 <!-- Imagen principal -->
-<div class="d-flex flex-column align-items-center w-100">
+<div class="d-flex flex-column overflow-hidden align-items-center w-100">
 
-    <section class="row g-0 justify-content-center align-items-center mx-auto"
-        [ngStyle]="{'background-image': 'url('+ images.home_bg + ')'}">
+    <section class="row g-0 justify-content-center align-items-start mx-auto home_bg position-relative"
+        [style.background-image]="'url('+images.home_bg+')'">
+
+        <h1 class="text-center position-absolute" style="top: 25%;left: 50%;transform: translateX(-50%);z-index: 1;">
+            Leer es
+            divertido</h1>
+
+    </section>
+
+    <section class="row g-0 p-5 w-100">
+
+        <h3>Nuevo</h3>
+        <p>Descubre los últimos libros y los nuevos lanzamientos de moda</p>
+
+        <div class="col-12 d-flex gap-3 mt-5">
+
+            <div class="row g-0 w-100 justify-content-between">
+                <cmp-cmm-product-card-v2 *ngFor="let item of section1Products"
+                    class="col-xl-3 col-md-4 col-sm-6 d-flex justify-content-center mb-5" [product]="item"
+                    [configStyle]="{priceColor: '#E88A10'}" (addProduct)="navigate($event)"></cmp-cmm-product-card-v2>
+            </div>
+        </div>
+
     </section>
 
 </div>

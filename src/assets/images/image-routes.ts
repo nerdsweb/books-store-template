@@ -36,5 +36,5 @@ export const images = {
     product20: 'assets/images/products/product20.jpg',
     product21: 'assets/images/products/product21.jpg',
     product22: 'assets/images/products/product22.jpg',
-    home_bg: 'assets/images/book_bg.avif'
+    home_bg: 'assets/images/home_bg.webp'
 }

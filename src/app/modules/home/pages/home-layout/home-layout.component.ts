@@ -1,5 +1,7 @@
 import { Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 import { logoShape } from 'src/app/common/assets/images/images-routes';
+import { CmmEcomProductCardDataModel } from 'src/app/common/data/utils/models/ecommerce.models';
 import { images, logos } from 'src/assets/images/image-routes';
 
 @Component({
@@ -121,5 +123,58 @@ export class HomeLayoutComponent {
     }
   ]
 
+  /**
+   * Productos de la primera sección
+   */
+  section1Products: CmmEcomProductCardDataModel[] = [
+    {
+      image: images.product1,
+      title: 'LA TIERRA PRIMETIDA',
+      brand: 'BARACK OBAMA',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '1'
+    },
+    {
+      image: images.product2,
+      title: 'EL MUNDO COMO YO LO VEO',
+      brand: 'ALBERT EINSTEIN',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '2'
+    },
+    {
+      image: images.product1,
+      title: 'LA TIERRA PRIMETIDA',
+      brand: 'BARACK OBAMA',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '3'
+    },
+    {
+      image: images.product1,
+      title: 'LA TIERRA PRIMETIDA',
+      brand: 'BARACK OBAMA',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '4'
+    },
+  ]
+
+  constructor(
+    private router: Router
+  ) { }
+
+  /**
+   * Me lleva a la vista de detalle
+   * @param id 
+   */
+  navigate(id: string) {
+    this.router.navigate(['/products/detail'])
+  }
 
 }

@@ -6,6 +6,12 @@
     height: 100vh;
 }
 
+.bg_image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media (max-width: 767px) {
 
     .home_bg {

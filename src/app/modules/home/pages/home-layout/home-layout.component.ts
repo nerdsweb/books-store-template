@@ -15,114 +15,6 @@ export class HomeLayoutComponent {
 
   logos = logos
 
-  logosBanner = [
-    // logos.mango,
-    // logos.channel,
-    // logos.dior,
-  ]
-
-  outstandingProducts = [
-    // this.images.t_shirt,
-    // this.images.tall_shoe,
-    // this.images.white_shoe,
-  ]
-
-  /**
-   * Productos del carrusel
-   */
-  carouselProducts: any[] = [
-    {
-      "image": "assets/images/products/white_shoe.png",
-      "name": "SNEAKERS MARCA",
-      "price": "158",
-      "variants": [
-        "#D7D3D2",
-        "#000",
-        "#E5B8A3"
-      ]
-    },
-    {
-      "image": "assets/images/products/tall_shoe.png",
-      "name": "SANDALIAS MARCA",
-      "price": "200",
-      "variants": [
-        "#E5B8A3",
-        "#000"
-      ]
-    },
-    {
-      "image": "assets/images/products/t-shirt.png",
-      "name": "CAMISETA MARCA",
-      "price": "158",
-      "variants": [
-        "#fff",
-        "#000",
-        "#148954",
-        "#0C1284",
-        "#A46D09"
-      ]
-    },
-    {
-      "image": "assets/images/products/jean.png",
-      "name": "JEANS MARCA",
-      "price": "158",
-      "variants": [
-        "#356281",
-        "#6F9FC5",
-        "#000"
-      ]
-    },
-    {
-      "image": "assets/images/products/purse.png",
-      "name": "CARTERA ALTAS",
-      "price": "200",
-      "variants": [
-        "#000"
-      ]
-    },
-    {
-      "image": "assets/images/products/cap.png",
-      "name": "GORRA MARCA",
-      "price": "200",
-      "variants": [
-        "#D7D3D2",
-        "#000",
-        "#074459"
-      ]
-    },
-    {
-      "image": "assets/images/products/tall_shoe.png",
-      "name": "SANDALIAS MARCA",
-      "price": "200",
-      "variants": [
-        "#E5B8A3",
-        "#000"
-      ]
-    },
-    {
-      "image": "assets/images/products/white_shoe.png",
-      "name": "SNEAKERS MARCA",
-      "price": "158",
-      "variants": [
-        "#D7D3D2",
-        "#000",
-        "#E5B8A3"
-      ]
-    },
-    {
-      "image": "assets/images/products/t-shirt.png",
-      "name": "CAMISETA MARCA",
-      "price": "158",
-      "variants": [
-        "#fff",
-        "#000",
-        "#148954",
-        "#0C1284",
-        "#A46D09"
-      ]
-    }
-  ]
-
   /**
    * Productos de la primera sección
    */
@@ -146,22 +38,136 @@ export class HomeLayoutComponent {
       id: '2'
     },
     {
-      image: images.product1,
-      title: 'LA TIERRA PRIMETIDA',
-      brand: 'BARACK OBAMA',
+      image: images.product3,
+      title: 'LA VACA PÚRPURA',
+      brand: 'SEHT GODIN',
       price: '14,00',
       previousprice: '27,00',
       currency: '$',
       id: '3'
     },
     {
-      image: images.product1,
-      title: 'LA TIERRA PRIMETIDA',
-      brand: 'BARACK OBAMA',
+      image: images.product4,
+      title: 'EL LIBRO QUE TU CEREBRO NO QUIERE LEER',
+      brand: 'DAVID DEL ROSARIO',
       price: '14,00',
       previousprice: '27,00',
       currency: '$',
       id: '4'
+    },
+    {
+      image: images.product5,
+      title: 'PADRE RICO PADRE POBRE',
+      brand: 'Robert T. Kiyosaki',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '5'
+    },
+    {
+      image: images.product6,
+      title: 'UN CUENTO PERFECTO',
+      brand: 'ELÍSABET BENAVENT',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '6'
+    },
+    {
+      image: images.product7,
+      title: 'HÁBITOS ATÓMICOS',
+      brand: 'JAMES CLEAR',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '7'
+    },
+    {
+      image: images.product8,
+      title: 'EL PERFUME',
+      brand: 'PATRIC SÜSKIND',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '8'
+    },
+  ]
+
+  section2Products: CmmEcomProductCardDataModel[] = [
+    {
+      image: images.product9,
+      title: 'BLUEY',
+      brand: 'Robert T. Kiyosaki',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '1'
+    },
+    {
+      image: images.product10,
+      title: 'CAPERUCITA ROJA',
+      brand: 'ELÍSABET BENAVENT',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '1'
+    },
+    {
+      image: images.product11,
+      title: 'EL PRINCIPITO',
+      brand: 'JAMES CLEAR',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '1'
+    },
+    {
+      image: images.product12,
+      title: 'JACK Y LAS HABICUELAS MÁGICAS',
+      brand: 'PATRIC SÜSKIND',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '1'
+    },
+  ]
+
+  section3Products: CmmEcomProductCardDataModel[] = [
+    {
+      image: images.product13,
+      title: 'LA TIERRA PROMETIDA',
+      brand: 'BARACK OBAMA',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '1'
+    },
+    {
+      image: images.product14,
+      title: 'LA TIERRA PROMETIDA',
+      brand: 'BARACK OBAMA',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '1'
+    },
+    {
+      image: images.product15,
+      title: 'LA TIERRA PROMETIDA',
+      brand: 'BARACK OBAMA',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '1'
+    },
+    {
+      image: images.product16,
+      title: 'LA TIERRA PROMETIDA',
+      brand: 'BARACK OBAMA',
+      price: '14,00',
+      previousprice: '27,00',
+      currency: '$',
+      id: '1'
     },
   ]
 

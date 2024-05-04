@@ -17,65 +17,24 @@ export class MainSidenavMenuComponent {
    */
   expansionPanelData: any[] = [
     {
-      header: 'Ropa',
-      items: [
-        'Camisas',
-        'Jeans',
-        'Chaquetas',
-        'Pantalones',
-        'Vestidos',
-        'Jumpsuits',
-        'Faldas',
-        'Todo',
-      ]
+      header: 'Best sellers',
+      items: []
     },
     {
-      header: 'Zapatos',
-      items: [
-        'Mocasines',
-        'Botas',
-        'Sneakers',
-        'Sandalias',
-      ]
+      header: 'Recetas',
+      items: []
     },
     {
-      header: 'Bolsos',
-      items: [
-        'Bandoleras',
-        'Morrales',
-        'Monederos/billeteras',
-        'Riñoneras',
-        'Sobres',
-      ]
+      header: 'Educativos',
+      items: []
     },
     {
-      header: 'Accesorios',
-      items: [
-        'Sombreros/Caps',
-        'Correas',
-        'Pulseras',
-        'Relojes',
-        'Sobres',
-      ]
+      header: 'Infantiles',
+      items: []
     },
     {
-      header: 'Underwear',
-      items: [
-        'Ropa interior',
-        'Traje de baño',
-        'Pijamas',
-        'Sandalias',
-        'Medias',
-      ]
-    },
-    {
-      header: 'Activewear',
-      items: [
-        'Sudaderas',
-        'Hoodies',
-        'Guarda camisas',
-        'Conjuntos',
-      ]
+      header: 'Papelería',
+      items: []
     },
   ]
 

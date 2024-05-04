@@ -1,12 +1,12 @@
-<header class="row justify-content-center mx-auto w-100" style="background-color: transparent;">
+<header class="row justify-content-center mx-auto w-100 pb-3" [ngClass]="showBg?'header_bg':''">
 
     <div class="col-12 cmm-bg-project-primary" style="height: 50px;"></div>
 
-    <div class="col-12 d-flex align-items-center gap-3 px-3" style="max-width: 1500px;">
+    <div class="col-12 d-flex justify-content-between align-items-center gap-3 px-3" style="max-width: 1500px;">
 
         <img [src]="logos.daves" style="width: 75px;max-height: 150px;" alt="">
 
-        <div class="d-flex flex-grow-1 justify-content-center gap-3">
+        <div class="d-none d-md-flex flex-grow-1 justify-content-center gap-3">
 
             <div class="navbar_grid w-100" style="max-width: 600px;">
 
@@ -16,10 +16,16 @@
 
         </div>
 
-        <div class="d-flex gap-3">
+        <div class="d-none d-md-flex gap-3">
 
             <mat-icon class="header_icon fs-30 cursor-pointer">person</mat-icon>
             <mat-icon class="header_icon fs-30 cursor-pointer">shopping_cart</mat-icon>
+
+        </div>
+
+        <div class="d-flex d-md-none" (click)="toggleSidenav()">
+
+            <mat-icon class="header_icon fs-30 cursor-pointer">menu</mat-icon>
 
         </div>
 

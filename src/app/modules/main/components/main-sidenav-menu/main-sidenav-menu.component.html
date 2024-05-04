@@ -6,20 +6,29 @@
 
     </div>
 
-    <mat-expansion-panel *ngFor="let expansionPanel of expansionPanelData; index as i" class="col-12 p-0"
-        (opened)="panelExpanded = i" [expanded]="panelExpanded == i">
+    <div *ngFor="let expansionPanel of expansionPanelData; index as i">
 
-        <mat-expansion-panel-header
-            style="background: transparent;height: 64px;">{{expansionPanel.header}}</mat-expansion-panel-header>
+        <!-- Expansion panel -->
+        <mat-expansion-panel *ngIf="expansionPanel.items.length" class="col-12 p-0" (opened)="panelExpanded = i"
+            [expanded]="panelExpanded == i">
 
-        <mat-divider></mat-divider>
+            <mat-expansion-panel-header style="background: transparent;height: 64px;" expandedHeight="64px"
+                collapsedHeight="64px">{{expansionPanel.header}}</mat-expansion-panel-header>
 
-        <div *ngFor="let item of expansionPanel.items; index as i" class="cursor-pointer"
-            [ngClass]="i == 0?'my-3':'mb-3'">
-            <span routerLink="/products" (click)="closeSidenav.emit()">{{item}}</span>
-            <mat-divider></mat-divider>
-        </div>
+            <div *ngFor="let item of expansionPanel.items; index as i"
+                class="cursor-pointer dropdown_item border-bottom px-2 py-3">
 
-    </mat-expansion-panel>
+                <a class="text-black" routerLink="/products" (click)="closeSidenav.emit()">{{item}}</a>
+            </div>
+
+        </mat-expansion-panel>
+
+        <!-- Link sin expansion -->
+        <span *ngIf="!expansionPanel.items.length" class="px-4 d-flex align-items-center w-100 cursor-pointer"
+            style="height: 64px;" routerLink="/products" (click)="closeSidenav.emit()">
+            <a class="text-black text-decoration-none" routerLink="/products">{{expansionPanel.header}}</a>
+        </span>
+
+    </div>
 
 </div>

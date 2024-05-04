@@ -29,7 +29,7 @@ export class MainHeaderComponent {
       text: 'Infantiles',
     },
     {
-      text: 'papelería',
+      text: 'Papelería',
     },
   ]
 

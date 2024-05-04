@@ -1,0 +1,35 @@
+<div class="row mx-auto bg-white w-100">
+
+    <!-- Componente de detalle del producto -->
+    <cmp-products-detail class="col-12 my-5"></cmp-products-detail>
+
+    <section class="d-flex flex-column my-5">
+        <h3 class="text-center cmm-txt-thin-bold mb-5">Arma tu look y luce fantástica</h3>
+
+        <div class="row">
+            <div *ngFor="let item of looks" class="col-4 px-3 d-flex justify-content-center">
+
+                <img [src]="item" alt="" class="w-100 cursor-pointer small-scale"
+                    style="aspect-ratio: 9/10;max-width: 300px;">
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="d-flex flex-column my-5">
+
+        <h3 class="text-center cmm-txt-thin-bold my-5">Estas prendas están en promo</h3>
+
+        <div class="row">
+            <div *ngFor="let item of promos" class="col-3 px-3 d-flex justify-content-center">
+
+                <img [src]="item" alt="" class="w-100 cursor-pointer small-scale"
+                    style="aspect-ratio: 9/10;max-width: 300px;">
+
+            </div>
+        </div>
+
+    </section>
+
+</div>

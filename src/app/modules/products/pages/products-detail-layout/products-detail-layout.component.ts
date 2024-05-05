@@ -23,8 +23,18 @@ export class ProductsDetailLayoutComponent {
     aditionalInfo: [
       {
         title: 'sinopsis',
-        text: 'El prestigioso ex negociador internacional del FBI Chris Voss, especializado en secuestros con rehenes, nos enseña un método de negociación rompedor: tácticas para negociaciones duras que son aplicables en múltiples aspectos de nuestras vidas.'
+        texts: [
+          'El prestigioso ex negociador internacional del FBI Chris Voss, especializado en secuestros con rehenes, nos enseña un método de negociación rompedor: tácticas para negociaciones duras que son aplicables en múltiples aspectos de nuestras vidas.',
+
+          // 'Rompe la barrera del no es un manual de negociación imprescindible desarrollado y perfeccionado a lo largo de la extraordinaria carrera de Chris Voss como negociador en secuestros con rehenes y como reconocido profesor en las escuelas de negocio más prestigiosas del mundo. Voss ha puesto a prueba estas técnicas en todo tipo de situaciones y ha comprobado su efectividad, tanto en los inicios de su carrera cuando patrullaba las peligrosas calles de Kansas City como en los cursos que imparte en las mejores universidades. Entre las muchas y distintas personas que han aplicado sus enseñanzas, se encuentran desde clientes que han visto aumentar significativamente los beneficios de sus empresas hasta estudiantes de programas de MBA que han conseguido empleos mejores o incluso padres que tienen que vérselas con sus hijos.',
+
+          // 'Rompe la barrera del no relata los entresijos de situaciones verdaderamente dramáticas y revela las mejores y más eficaces estrategias de negociación. Voss, uno de los mejores negociadores del mundo, nos enseña a emplear estas técnicas en cualquier aspecto de nuestra vida.'
+        ]
       },
+      // {
+      //   title: 'otra cosa',
+      //   text: 'El prestigioso ex negociador internacional del FBI Chris Voss, especializado en secuestros con rehenes, nos enseña un método de negociación rompedor: tácticas para negociaciones duras que son aplicables en múltiples aspectos de nuestras vidas. Rompe la barrera del no es un manual de negociación imprescindible desarrollado y perfeccionado a lo largo de la extraordinaria carrera de Chris Voss como negociador en secuestros con rehenes y como reconocido profesor en las escuelas de negocio más prestigiosas del mundo. Voss ha puesto a prueba estas técnicas en todo tipo de situaciones y ha comprobado su efectividad, tanto en los inicios de su carrera cuando patrullaba las peligrosas calles de Kansas City como en los cursos que imparte en las mejores universidades. Entre las muchas y distintas personas que han aplicado sus enseñanzas, se encuentran desde clientes que han visto aumentar significativamente los beneficios de sus empresas hasta estudiantes de programas de MBA que han conseguido empleos mejores o incluso padres que tienen que vérselas con sus hijos. Rompe la barrera del no relata los entresijos de situaciones verdaderamente dramáticas y revela las mejores y más eficaces estrategias de negociación. Voss, uno de los mejores negociadores del mundo, nos enseña a emplear estas técnicas en cualquier aspecto de nuestra vida.'
+      // },
       // {
       //   title: 'COLOR',
       //   type: 'variants',

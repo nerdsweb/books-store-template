@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CmmEcomProductDetailModelv2 } from 'src/app/common/data/utils/models/ecommerce.models';
 import { images } from 'src/assets/images/image-routes';
 
 @Component({
@@ -8,27 +9,31 @@ import { images } from 'src/assets/images/image-routes';
 })
 export class ProductsOverviewLayoutComponent {
 
-  productsList: any[] = [
+  productsList: CmmEcomProductDetailModelv2[] = [
     {
-      image: images.product5,
-      title: 'PADRE RICO PADRE POBRE',
-      brandName: 'Robert T. Kiyosaki',
+      images: [],
+      mainImage: images.product5,
+      name: 'PADRE RICO PADRE POBRE',
+      brand: 'Robert T. Kiyosaki',
       sku: 'krogm93746917',
       price: '14,00',
-      previousprice: '27,00',
+      previousPrice: '27,00',
       quantity: 1,
       currency: '$',
       id: '5'
     },
     {
+      id: '3',
       images: [
         images.product20,
       ],
-      image: images.product6,
+      mainImage: images.product6,
       name: 'Never split the difference',
-      brandName: 'Chris Voss',
+      brand: 'Chris Voss',
       sku: 'krogm93746917',
       price: '175.00',
+      previousPrice: '',
+      currency: '$',
       quantity: 1,
       aditionalInfo: [
         {
@@ -40,14 +45,18 @@ export class ProductsOverviewLayoutComponent {
       ],
     },
     {
-      image: images.product7,
-      title: 'HÁBITOS ATÓMICOS',
-      brandName: 'JAMES CLEAR',
-      price: '14,00',
-      quantity: 1,
-      previousprice: '27,00',
+      id: '3',
+      images: [
+        images.product20,
+      ],
+      mainImage: images.product6,
+      name: 'HÁBITOS ATÓMICOS',
+      brand: 'JAMES CLEAR',
+      sku: 'krogm93746917',
+      price: '175.00',
+      previousPrice: '',
       currency: '$',
-      id: '7'
+      quantity: 1,
     },
   ]
 

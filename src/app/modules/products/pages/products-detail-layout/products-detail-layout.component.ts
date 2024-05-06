@@ -13,6 +13,7 @@ export class ProductsDetailLayoutComponent {
   looks = []
 
   product: CmmEcomProductDetailModelv2 = {
+    id: '1',
     images: [
       images.product20,
     ],
@@ -21,6 +22,7 @@ export class ProductsDetailLayoutComponent {
     brand: 'Chris Voss',
     price: '175.00',
     quantity: 1,
+    currency: 'S',
     aditionalInfo: [
       {
         title: 'sinopsis',

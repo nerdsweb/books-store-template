@@ -1,7 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { CmmEcomFooterConfig } from 'src/app/common/data/utils/models/ecommerce.models';
-import { icons } from 'src/assets/images/image-routes';
+import { icons, logos } from 'src/assets/images/image-routes';
 
 @Component({
   selector: 'pag-main-layout',
@@ -43,8 +43,10 @@ export class MainLayoutComponent {
     //     text: 'Empaque exclusivo por marca'
     //   },
     // ],
+    mainLogo: logos.daves,
+    mainLogoSize: {width: '75px', height: '110px'},
     businessInfo: {
-      name: 'MIRACULOUS',
+      name: "Dave's",
       phone: '+58 0424-5555607',
       mail: 'atencion@miraculous.com',
       direction: 'Av. Circumbalación del sol, calle 110 con av 62 de El Cafetal, Caracas'

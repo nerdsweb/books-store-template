@@ -1,12 +1,13 @@
 {
   "name": "books-store-template",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy --base-href=/books-store-template/"
   },
   "private": true,
   "dependencies": {

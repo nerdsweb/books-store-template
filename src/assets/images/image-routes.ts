@@ -11,6 +11,7 @@ export const icons = {
 
 export const logos = {
     daves: 'assets/images/logos/daves.svg',
+    daves_white: 'assets/images/logos/daves_white.svg',
 }
 
 export const images = {

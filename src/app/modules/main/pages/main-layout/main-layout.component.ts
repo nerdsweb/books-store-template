@@ -43,8 +43,8 @@ export class MainLayoutComponent {
     //     text: 'Empaque exclusivo por marca'
     //   },
     // ],
-    mainLogo: logos.daves,
-    mainLogoSize: {width: '75px', height: '110px'},
+    mainLogo: logos.daves_white,
+    mainLogoSize: { width: '75px', height: '110px' },
     businessInfo: {
       name: "Dave's",
       phone: '+58 0424-5555607',
